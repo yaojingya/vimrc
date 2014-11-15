@@ -24,5 +24,14 @@ git submodule update
 vim +BundleInstall +qall
 cd bundle/YouCompleteMe
 ./install.sh --clang-completer
+cd ../..
+
+[ -d ~/.fonts ] || mkdir ~/.fonts
+cp -f fonts/* ~/.fonts
+cd ~/.fonts
+chmod 644 ~/.fonts/*
+mkfontscale
+mkfontdir
+fc-cache -fv
 
 cd ~
