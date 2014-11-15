@@ -29,3 +29,6 @@
 
 # vim temp file
 *.swp
+
+# vundle plugin directory
+/bundle/
