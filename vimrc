@@ -1,4 +1,4 @@
-set nocompatible
+"set nocompatible
 " Vundle
 filetype off
 set rtp+=~/.vim/bundle/vundle
@@ -7,6 +7,8 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 
 Bundle 'winmanager'
 Bundle 'bufexplorer.zip'
@@ -20,12 +22,12 @@ call vundle#end()
 " Vundle
 
 syntax on
+set nocompatible
 filetype on
 filetype plugin on
 filetype indent on
 set nobomb
-set fileencodings=utf8
-",ucs-bom,gbk,gb18030,cp936
+set fileencodings=utf8,ucs-bom,gbk,gb18030,cp936
 set fileformat=unix
 set encoding=utf8
 set termencoding=utf8
@@ -48,10 +50,10 @@ set tabstop=4
 set softtabstop=4
 set sw=2
 "只显示底部滚动条,不显示菜单
-set guioptions-=b
-set guioptions-=L
-set guioptions-=r
-set guioptions-=T
+"set guioptions-=b
+"set guioptions-=L
+"set guioptions-=r
+"set guioptions-=T
 "不要换行
 "set nowrap
 
@@ -163,3 +165,7 @@ let g:syntastic_warning_symbol = '!'
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libstdc++'
 let g:syntastic_cpp_include_dirs = ['/usr/include/','/usr/local/include','/usr/include/glib-2.0']
+
+set laststatus=2
+set t_Co=256
+"let g:airline#extensions#tabline#enabled = 1

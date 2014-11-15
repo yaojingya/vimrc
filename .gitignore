@@ -30,5 +30,8 @@
 # vim temp file
 *.swp
 
+# python
+*.pyc
+
 # vundle plugin directory
 /bundle/
