@@ -50,10 +50,10 @@ set tabstop=4
 set softtabstop=4
 set sw=2
 "只显示底部滚动条,不显示菜单
-"set guioptions-=b
-"set guioptions-=L
-"set guioptions-=r
-"set guioptions-=T
+set guioptions-=b
+set guioptions-=L
+set guioptions-=r
+set guioptions-=T
 "不要换行
 "set nowrap
 
