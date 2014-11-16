@@ -41,7 +41,9 @@ doxygen的vim助手插件。
 首先请备份原有.vim插件目录，并确保安装了exuberant-ctags和python，然后在控制台输入下面的指令：
 
 > git clone https://github.com/maolin-cdzl/vimrc.git ~/.vim
+>
 > cd ~/.vim
+>
 > ./install.sh
 
 OK，安装完毕！由于需要下载较多的git库和编译YouCompleteMe自动补全插件，视网速和电脑配置，install过程可能需要几分钟到十几分钟。
@@ -54,13 +56,21 @@ OK，安装完毕！由于需要下载较多的git库和编译YouCompleteMe自�
 **VIM中的"leader键"设置为了右逗号。**
 
 - <kbd>,be</kbd> 在当前窗口显示打开的文件列表，并浏览切换。
+
 <kbd> ,bs</kbd> 横向切分窗口，并在新窗口中打开文件列表。
+
  <kbd>,bv</kbd> 纵向切分窗口，并在新窗口中打开文件列表
+
 - <kbd>ctrl+w</kbd> 后跟 h/j/k/l 向当前窗口的左/下/上/右窗口移动焦点。
+
 <kbd>ctrl+c</kbd> 关闭当前窗口
+
 - <kbd>F9</kbd> 打开/关闭 “浏览窗口”。左上是文件浏览器，当焦点在该窗口时，<kbd>enter</kbd>进入目录或打开文件，<kbd>-</kbd>（减号）切到上级目录，左下是tag列表。
+
 - <kbd>F12</kbd> 在头文件和源文件之间切换
+
 - <kbd>F2</kbd> 为当前焦点代码添加doxy兼容风格的注释
+
 <kbd>F4</kbd> 为当前文件添加注释文件头，请修改下vimrc中的`g:DoxygenToolkit_authorName`，否则自动填充的是我的名字。
 
 
