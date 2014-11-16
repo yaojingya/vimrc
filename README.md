@@ -3,14 +3,13 @@ VIM配置分享 -- 快速上手
 
 同事们在我的诱导下，逐渐开始有人使用VIM作为开发的代码编辑器了。虽说最优的VIM配置一定是根据自己的使用习惯，自己逐步搭建起来的，但为了一帮之前都没怎么接触过Linux系统的人方便上手，将自己使用的VIM配置整理了下，上载到了github平台上。
 
-----------
 
 插件列表
 -------------
 
-- vundle 
+- vundle
 插件管理器。
-- YouCompleteMe 
+- YouCompleteMe
 VIM迄今最强大的自动补全神器，就是第一次安装比较耗时。
 - syntastic
 编写代码时实时在左侧显示编译错误或警告提示。
@@ -67,7 +66,6 @@ OK，安装完毕！由于需要下载较多的git库和编译YouCompleteMe自�
 - <kbd>F12</kbd> 在头文件和源文件之间切换
 
 - <kbd>F2</kbd> 为当前焦点代码添加doxy兼容风格的注释
-
 <kbd>F4</kbd> 为当前文件添加注释文件头，请修改下vimrc中的`g:DoxygenToolkit_authorName`，否则自动填充的是我的名字。
 
 
