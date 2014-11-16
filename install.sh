@@ -29,9 +29,12 @@ cd ../..
 [ -d ~/.fonts ] || mkdir ~/.fonts
 cp -f fonts/* ~/.fonts
 cd ~/.fonts
-chmod 644 ~/.fonts/*
+git clone https://github.com/Lokaltog/powerline-fonts.git
 mkfontscale
 mkfontdir
-fc-cache -fv
+fc-cache -fv ~/.fonts
 
 cd ~
+echo "请在Terminal(控制台)菜单中设置字体为新安装的以for Powerline结尾命名的字体中的一种,例如DejaVu Sans Mono for Powerline Regular。"
+echo "否则控制台下vim底部airline bar部分字符显示乱码."
+

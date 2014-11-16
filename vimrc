@@ -33,7 +33,8 @@ set encoding=utf8
 set termencoding=utf8
 set mouse=a
 "set guifont=Arial\ monospaced\ for\ SAP\ 10
-set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
+"set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
+set guifont=Dejavu\ Sans\ Mono\ for\ Powerline\ Regular\ 10
 set gfw=幼圆\ 10.5
 set hlsearch
 set incsearch
@@ -168,4 +169,14 @@ let g:syntastic_cpp_include_dirs = ['/usr/include/','/usr/local/include','/usr/i
 
 set laststatus=2
 set t_Co=256
+" 使用powerline打过补丁的字体
+let g:airline_powerline_fonts = 1
+" 开启tabline
 "let g:airline#extensions#tabline#enabled = 1
+" tabline中当前buffer两端的分隔字符
+"let g:airline#extensions#tabline#left_sep = ' '
+" tabline中未激活buffer两端的分隔字符
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+" tabline中buffer显示编号
+"let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_theme="molokai"
